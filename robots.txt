@@ -1,1 +1,1 @@
-Sitemap: https://jvanelteren.github.io/blog/sitemap.xml
+Sitemap: https://jvanelteren.github.io/blog/blog/sitemap.xml
