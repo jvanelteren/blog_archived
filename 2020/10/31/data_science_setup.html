@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Current preffered data science setup | fastpages</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Current preffered data science setup" />
+<meta name="author" content="Jesse van Elteren" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="And some tips on getting it to work on Google Cloud Platform" />
+<meta property="og:description" content="And some tips on getting it to work on Google Cloud Platform" />
+<link rel="canonical" href="https://jvanelteren.github.io/blog/2020/10/31/data_science_setup.html" />
+<meta property="og:url" content="https://jvanelteren.github.io/blog/2020/10/31/data_science_setup.html" />
+<meta property="og:site_name" content="fastpages" />
+<meta property="og:image" content="https://jvanelteren.github.io/blog/images/gcp.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-10-31T00:00:00-05:00" />
+<script type="application/ld+json">
+{"url":"https://jvanelteren.github.io/blog/2020/10/31/data_science_setup.html","@type":"BlogPosting","headline":"Current preffered data science setup","dateModified":"2020-10-31T00:00:00-05:00","datePublished":"2020-10-31T00:00:00-05:00","image":"https://jvanelteren.github.io/blog/images/gcp.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://jvanelteren.github.io/blog/2020/10/31/data_science_setup.html"},"author":{"@type":"Person","name":"Jesse van Elteren"},"description":"And some tips on getting it to work on Google Cloud Platform","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jvanelteren.github.io/blog/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">fastpages</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Current preffered data science setup</h1><p class="page-description">And some tips on getting it to work on Google Cloud Platform</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-10-31T00:00:00-05:00" itemprop="datePublished">
+        Oct 31, 2020
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Jesse van Elteren</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      7 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/jvanelteren/blog/tree/master/_notebooks/2020-10-31-data_science_setup.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/blog/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/jvanelteren/blog/master?filepath=_notebooks%2F2020-10-31-data_science_setup.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/jvanelteren/blog/blob/master/_notebooks/2020-10-31-data_science_setup.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2020-10-31-data_science_setup.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I’ve spend some time tinkering with getting a preferred data science stack up. In this post I’m detailing the choices made and could also help you get started on GCP. If you just want to start with programming, go to <a href="https://colab.research.google.com/">Google Colab</a> and you're set to go.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/blog/images/copied_from_nb/datascience/stack.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The data science setup is now made up of:</p>
+<ul>
+<li>All development in Python (installed via <a href="https://docs.conda.io/en/latest/miniconda.html">Miniconda</a>), with <a href="https://pytorch.org/">Pytorch</a> and <a href="https://www.fast.ai/">Fast.ai</a> for deep learning</li>
+<li>A personal computer with <a href="https://www.microsoft.com/nl-nl/store/b/windows">Windows 10</a>, <a href="https://code.visualstudio.com/">VSCode</a> with <a href="https://jupyter.org/">Jupyter notebooks</a> functionality</li>
+<li><a href="https://cloud.google.com/">Google Cloud Platform</a> with a <a href="https://www.docker.com/">Docker</a> container running <a href="https://ubuntu.com/">Linux Ubuntu</a></li>
+<li><a href="https://github.com/jvanelteren">Github</a> for storing the codebase and a github action based blog running <a href="https://fastpages.fast.ai/">fastpages</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>For me this works best at the moment. Some remarks on tradeoffs.</p>
+<ul>
+<li><p>Python vs other languages. Python is todays language of choice for data science. It's just so simple to express ideas in code. Also there are just so many packages available with useful functionality that the whole world is basically an import statement away. Maybe I’ll learn Julia, Kotlin or Swift once, but for now I’m set.</p>
+</li>
+<li><p>Pytorch vs TensorFlow: Pytorch is so much easier compared to Tensorflow. I remember doing an introduction on Tensorflow and I found it difficult to grasp.</p>
+</li>
+<li><p>Pytorch vs Fast.ai. Fast.ai is kind of the Keras of Pytorch. It has been a blessing and I do highly recommend it. The online course is great. Also you can get a deeplearning model running in no time. But it’s also an extra layer of abstraction to remember on top of trying to learn Pytorch. So right now I’m now mostly using with Pytorch and Fast.ai once in a while.</p>
+</li>
+<li><p>Windows vs Linux: OK for data science everyone says Linux is the go to, but I’m just so accustomed to Windows! I can definitely see the advantages of Linux and are slowly gravitating towards using a command line interface more. Windows made a big step with WSL2, so you can now run Linux from within Windows easily, so I did install Ubuntu locally. Maybe in the future I’ll switch fully to Linux, but for now this is working fine.</p>
+</li>
+<li><p>VSCode vs Jupyter Notebooks. In my opinion the setup of running notebooks within VSCode combines the advantages of a fully fledged IDE with the agile development that notebooks are known for.</p>
+</li>
+<li><p>Having an own computer vs doing everything in the cloud. Working in the cloud always has a startup of a couple of minutes. My time is limited, so I do prefer to open VSCode and start coding right away. When I need more compute I use the cloud.</p>
+</li>
+<li><p>GCP vs other cloud platforms. This decision was taken based on the $300 free credit you get with GCP.</p>
+</li>
+<li><p>Github: Initially I had all the code on my local computer and I used Git for version control. Now that I sometimes iterate between working locally and in the cloud, I store the main branch on Github and push/pull from whichever environment I’m working on.</p>
+</li>
+<li><p>Fastpages: First I started on Medium, but fastpages is a live saver for publishing from notebooks. It makes it actually fun to blog, instead of a chore duplicating your work in a blog article</p>
+</li>
+<li><p>Docker: For reproducibility, Docker is king. For cloud computing I think it’s the best way. You just make a Dockerfile and know what you will get. Also it can make the steps to deployment easier.</p>
+</li>
+<li><p>App deployment: Don’t know what the best is yet. Have tried Render, and could get a webserver it to work with GCP as well. You can even deploy on Binder with a notebook. Guess this one depends on the use case.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The remainer of the post is dedicated to helping you out with setting up GCP with Docker. Some things you need:</p>
+<ul>
+<li>The CLI command from Windows to get a VM running</li>
+<li>A startup script to make sure the VM runs the container</li>
+<li>A Dockerfile to build a docker image from</li>
+</ul>
+<p>Let's start with the CLI command</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">gcloud</span> <span class="n">beta</span> <span class="n">compute</span> <span class="n">instances</span> <span class="n">create</span> <span class="n">gpu</span> <span class="err">`</span>
+<span class="o">--</span><span class="n">zone</span><span class="o">=</span><span class="n">us</span><span class="o">-</span><span class="n">central1</span><span class="o">-</span><span class="n">c</span> <span class="err">`</span>
+<span class="o">--</span><span class="n">machine</span><span class="o">-</span><span class="nb">type</span><span class="o">=</span><span class="n">n1</span><span class="o">-</span><span class="n">standard</span><span class="o">-</span><span class="mi">8</span> <span class="err">`</span>
+<span class="o">--</span><span class="n">subnet</span><span class="o">=</span><span class="n">default</span> <span class="err">`</span>
+<span class="o">--</span><span class="n">service</span><span class="o">-</span><span class="n">account</span><span class="o">=</span><span class="n">YOURSERVICEACCOUNT</span><span class="o">-</span><span class="n">compute</span><span class="nd">@developer</span><span class="o">.</span><span class="n">gserviceaccount</span><span class="o">.</span><span class="n">com</span> <span class="err">`</span>
+<span class="o">--</span><span class="n">image</span><span class="o">-</span><span class="n">family</span><span class="o">=</span><span class="n">common</span><span class="o">-</span><span class="n">cu110</span> <span class="err">`</span>
+<span class="o">--</span><span class="n">image</span><span class="o">-</span><span class="n">project</span><span class="o">=</span><span class="n">deeplearning</span><span class="o">-</span><span class="n">platform</span><span class="o">-</span><span class="n">release</span> <span class="err">`</span>
+<span class="o">--</span><span class="n">boot</span><span class="o">-</span><span class="n">disk</span><span class="o">-</span><span class="n">size</span><span class="o">=</span><span class="mi">50</span><span class="n">GB</span> <span class="err">`</span>
+<span class="o">--</span><span class="n">scopes</span><span class="o">=</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">googleapis</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">auth</span><span class="o">/</span><span class="n">cloud</span><span class="o">-</span><span class="n">platform</span><span class="p">,</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">googleapis</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">auth</span><span class="o">/</span><span class="n">devstorage</span><span class="o">.</span><span class="n">full_control</span> <span class="err">`</span>
+<span class="o">--</span><span class="n">accelerator</span><span class="o">=</span><span class="nb">type</span><span class="o">=</span><span class="n">nvidia</span><span class="o">-</span><span class="n">tesla</span><span class="o">-</span><span class="n">k80</span><span class="p">,</span><span class="n">count</span><span class="o">=</span><span class="mi">1</span> <span class="err">`</span>
+<span class="o">--</span><span class="n">metadata</span><span class="o">=</span><span class="n">install</span><span class="o">-</span><span class="n">nvidia</span><span class="o">-</span><span class="n">driver</span><span class="o">=</span><span class="kc">True</span> <span class="err">`</span>
+<span class="o">--</span><span class="n">maintenance</span><span class="o">-</span><span class="n">policy</span><span class="o">=</span><span class="n">TERMINATE</span> <span class="err">`</span>
+<span class="o">--</span><span class="n">metadata</span><span class="o">-</span><span class="n">from</span><span class="o">-</span><span class="n">file</span> <span class="n">startup</span><span class="o">-</span><span class="n">script</span><span class="o">=</span><span class="n">startup</span><span class="o">-</span><span class="n">gpu</span><span class="o">.</span><span class="n">sh</span> <span class="err">`</span>
+<span class="o">--</span><span class="n">preemptible</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>You can create a GCP VM from the command line interface (CLI) or through the browser based console. Play around with the console to get an idea. Then, on the bottom click gcloud command to see the CLI command to copy in your terminal</p>
+<p>This command uses ` at end of line since it's run from Windows Powershell. If you use Linux, use backslash \</p>
+<p>Don't use Container Optimizer OS, as of november 2020 they dont install nvidia container runtime, meaning it's difficult to make use of the GPU inside the container. An approach that works is to use a data science image like common-cu110 as I've used here.</p>
+<p>The K80 is the cheapest GPU, good for experimenting.</p>
+<p>Also, use --preemtible. You're VM may be stopped unexpectedly, but it's about 66% cheaper!</p>
+<p>Next up is the startup script...</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># first some waiting until gpu drivers are truly installed</span>
+<span class="k">while</span> <span class="o">!</span> <span class="o">[[</span> -x <span class="s2">&quot;</span><span class="k">$(</span><span class="nb">command</span> -v nvidia-smi<span class="k">)</span><span class="s2">&quot;</span> <span class="o">]]</span><span class="p">;</span>
+<span class="n">do</span>
+  <span class="n">echo</span> <span class="s2">&quot;sleep to check&quot;</span>
+  <span class="n">sleep</span> <span class="mi">5</span><span class="n">s</span>
+<span class="n">done</span>
+<span class="n">echo</span> <span class="s2">&quot;nvidia-smi is installed&quot;</span>
+
+<span class="k">while</span> <span class="p">[[</span> <span class="err">$</span><span class="p">(</span><span class="n">command</span> <span class="n">nvidia</span><span class="o">-</span><span class="n">smi</span><span class="o">|</span> <span class="n">cut</span> <span class="o">-</span><span class="n">c1</span><span class="o">-</span><span class="mi">10</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;NVIDIA-SMI&quot;</span><span class="o">*</span> <span class="p">]];</span>
+<span class="n">do</span>
+  <span class="n">echo</span> <span class="s2">&quot;$(command nvidia-smi)&quot;</span>
+  <span class="n">echo</span> <span class="s2">&quot;sleeping to check&quot;</span>
+  <span class="n">sleep</span> <span class="mi">5</span><span class="n">s</span>
+<span class="n">done</span>
+<span class="n">echo</span> <span class="s2">&quot;$(command nvidia-smi)&quot;</span>
+<span class="n">echo</span> <span class="s2">&quot;nvidia-smi drivers are up&quot;</span>
+
+<span class="c1"># if you have a persistent disk you can use this to automatically mount it, otherwise remove it</span>
+<span class="k">if</span> <span class="p">[</span> <span class="o">!</span> -d <span class="s2">&quot;/mnt/disks/storage&quot;</span> <span class="o">]</span> 
+<span class="n">then</span>
+  <span class="n">sudo</span> <span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">disks</span><span class="o">/</span><span class="n">storage</span>
+  <span class="n">sudo</span> <span class="n">mount</span> <span class="o">-</span><span class="n">o</span> <span class="n">discard</span><span class="p">,</span><span class="n">defaults</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">disks</span><span class="o">/</span><span class="n">storage</span>
+  <span class="n">sudo</span> <span class="n">chmod</span> <span class="n">a</span><span class="o">+</span><span class="n">w</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">disks</span><span class="o">/</span><span class="n">storage</span>
+  <span class="n">sudo</span> <span class="n">cp</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">fstab</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">fstab</span><span class="o">.</span><span class="n">backup</span>
+  <span class="n">sudo</span> <span class="n">blkid</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb</span>
+  <span class="n">echo</span> <span class="n">UUID</span><span class="o">=</span><span class="err">`</span><span class="n">sudo</span> <span class="n">blkid</span> <span class="o">-</span><span class="n">s</span> <span class="n">UUID</span> <span class="o">-</span><span class="n">o</span> <span class="n">value</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">sdb</span><span class="err">`</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">disks</span><span class="o">/</span><span class="n">storage</span> <span class="n">ext4</span> <span class="n">discard</span><span class="p">,</span><span class="n">defaults</span><span class="p">,</span><span class="n">nofail</span> <span class="mi">0</span> <span class="mi">2</span> <span class="o">|</span> <span class="n">sudo</span> <span class="n">tee</span> <span class="o">-</span><span class="n">a</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">fstab</span>
+  <span class="n">echo</span> <span class="s2">&quot;mounting complete &quot;</span>
+<span class="k">else</span>
+  <span class="n">echo</span> <span class="s2">&quot;not first startup&quot;</span>
+<span class="n">fi</span>
+
+<span class="c1"># startup your Docker container, with port 6006 mapped to Docker for Tensorboard</span>
+<span class="n">gcloud</span> <span class="n">auth</span> <span class="n">configure</span><span class="o">-</span><span class="n">docker</span>
+<span class="n">docker</span> <span class="n">run</span> <span class="o">-</span><span class="n">d</span> <span class="o">-</span><span class="n">p</span> <span class="mf">0.0</span><span class="o">.</span><span class="mf">0.0</span><span class="p">:</span><span class="mi">6006</span><span class="p">:</span><span class="mi">6006</span> <span class="o">--</span><span class="n">gpus</span> <span class="nb">all</span> <span class="o">--</span><span class="n">ipc</span><span class="o">=</span><span class="s2">&quot;host&quot;</span> <span class="o">-</span><span class="n">v</span> <span class="o">/</span><span class="n">mnt</span><span class="o">/</span><span class="n">disks</span><span class="o">/</span><span class="n">storage</span><span class="p">:</span><span class="o">/</span><span class="n">ds</span> <span class="n">gcr</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">delta</span><span class="o">-</span><span class="n">deck</span><span class="o">-</span><span class="mi">285906</span><span class="o">/</span><span class="n">dockerfile</span>  
+<span class="n">echo</span> <span class="s1">&#39;Docker run with GPUs&#39;</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The first part of the startup script is mainly to wait until the gpu drivers are properly installed. Otherwise, docker run --gpus all will throw an error. Additionally, I like to use a persistent disk. To avoid the hassle of having to mount it every time I startup a new VM, this script does the work for you. Finally the most important is the Docker run instruction. It opens your container with GPU support. The first time you start up your VM it will take some minutes, but afterwards it's almost immediate.</p>
+<p>After this I like to connect to the running container with Vscode Remote-Container Attach to running container command. Checkout the Vscode docs for how to set this up. Basically you need to put the external ip of the VM into your SSH config file and add a line to your settings.json</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="s2">&quot;docker.host&quot;</span><span class="p">:</span> <span class="s2">&quot;ssh://YOURUSER@xxx.xxx.xxx.xxx&quot;</span><span class="p">,</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Host</span> <span class="n">xxx</span><span class="o">.</span><span class="n">xxx</span><span class="o">.</span><span class="n">xxx</span><span class="o">.</span><span class="n">xxx</span>
+  <span class="n">HostName</span> <span class="n">xxx</span><span class="o">.</span><span class="n">xxx</span><span class="o">.</span><span class="n">xxx</span><span class="o">.</span><span class="n">xxx</span><span class="o">.</span><span class="n">xxx</span>
+  <span class="n">IdentityFile</span> <span class="n">localpath</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">publicsshkey</span>
+  <span class="n">User</span> <span class="n">YOURUSER</span>
+  <span class="n">StrictHostKeyChecking</span> <span class="n">no</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>One final file to share: the Dockerfile which you can use to build your Docker image</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">FROM</span> <span class="n">nvidia</span><span class="o">/</span><span class="n">cuda</span><span class="p">:</span><span class="mf">10.2</span><span class="o">-</span><span class="n">runtime</span><span class="o">-</span><span class="n">ubuntu18</span><span class="o">.</span><span class="mi">04</span>
+
+<span class="c1">##Set environment variables</span>
+<span class="n">ENV</span> <span class="n">LANG</span><span class="o">=</span><span class="n">C</span><span class="o">.</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span> <span class="n">LC_ALL</span><span class="o">=</span><span class="n">C</span><span class="o">.</span><span class="n">UTF</span><span class="o">-</span><span class="mi">8</span>
+
+<span class="n">RUN</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span> <span class="o">--</span><span class="n">fix</span><span class="o">-</span><span class="n">missing</span> <span class="o">&amp;&amp;</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="o">-</span><span class="n">y</span> <span class="n">wget</span> <span class="n">byobu</span>\
+    <span class="n">curl</span> \
+    <span class="n">git</span><span class="o">-</span><span class="n">core</span> \
+    <span class="n">python3</span><span class="o">-</span><span class="n">virtualenv</span> \
+    <span class="n">unzip</span> \
+    <span class="o">&amp;&amp;</span> \
+    <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">clean</span> <span class="o">&amp;&amp;</span> \
+    <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">lists</span><span class="o">/*</span>
+
+<span class="n">RUN</span> <span class="n">wget</span> <span class="o">--</span><span class="n">quiet</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">repo</span><span class="o">.</span><span class="n">anaconda</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">miniconda</span><span class="o">/</span><span class="n">Miniconda3</span><span class="o">-</span><span class="n">py38_4</span><span class="o">.</span><span class="mf">8.3</span><span class="o">-</span><span class="n">Linux</span><span class="o">-</span><span class="n">x86_64</span><span class="o">.</span><span class="n">sh</span> <span class="o">-</span><span class="n">O</span> <span class="o">~/</span><span class="n">miniconda</span><span class="o">.</span><span class="n">sh</span> <span class="o">&amp;&amp;</span> \
+    <span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">bash</span> <span class="o">~/</span><span class="n">miniconda</span><span class="o">.</span><span class="n">sh</span> <span class="o">-</span><span class="n">b</span> <span class="o">-</span><span class="n">p</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">conda</span> <span class="o">&amp;&amp;</span> \
+    <span class="n">rm</span> <span class="o">~/</span><span class="n">miniconda</span><span class="o">.</span><span class="n">sh</span> <span class="o">&amp;&amp;</span> \
+    <span class="n">ln</span> <span class="o">-</span><span class="n">s</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">conda</span><span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">profile</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">conda</span><span class="o">.</span><span class="n">sh</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">profile</span><span class="o">.</span><span class="n">d</span><span class="o">/</span><span class="n">conda</span><span class="o">.</span><span class="n">sh</span> <span class="o">&amp;&amp;</span> \
+    <span class="n">echo</span> <span class="s2">&quot;. /opt/conda/etc/profile.d/conda.sh&quot;</span> <span class="o">&gt;&gt;</span> <span class="o">~/.</span><span class="n">bashrc</span> <span class="o">&amp;&amp;</span> \
+    <span class="n">echo</span> <span class="s2">&quot;conda activate base&quot;</span> <span class="o">&gt;&gt;</span> <span class="o">~/.</span><span class="n">bashrc</span>
+    
+<span class="n">ENV</span> <span class="n">PATH</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">conda</span><span class="o">/</span><span class="nb">bin</span><span class="p">:</span><span class="err">$</span><span class="n">PATH</span>
+
+<span class="n">RUN</span> <span class="n">pip</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">cache</span><span class="o">-</span><span class="nb">dir</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> \
+        <span class="n">altair</span> \
+        <span class="n">ipykernel</span> \
+        <span class="n">kaggle</span> \
+        <span class="n">fastbook</span> \
+        <span class="n">tensorboard</span> \
+        <span class="n">diskcache</span> \
+        <span class="o">&amp;&amp;</span> \
+    <span class="n">conda</span> <span class="n">install</span> <span class="o">-</span><span class="n">c</span> <span class="n">fastai</span> <span class="o">-</span><span class="n">c</span> <span class="n">pytorch</span> <span class="n">fastai</span> <span class="o">&amp;&amp;</span> \
+    <span class="n">pip</span> <span class="n">uninstall</span> <span class="o">-</span><span class="n">y</span> <span class="n">pillow</span> <span class="o">&amp;&amp;</span> \
+    <span class="n">pip</span> <span class="n">install</span> <span class="n">pillow</span><span class="o">-</span><span class="n">simd</span> <span class="o">--</span><span class="n">upgrade</span> <span class="o">&amp;&amp;</span> \
+    <span class="n">mkdir</span> <span class="o">-</span><span class="n">p</span> <span class="n">ds</span><span class="o">/.</span><span class="n">kaggle</span> <span class="o">&amp;&amp;</span> \
+    <span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">fastai</span><span class="o">/</span><span class="n">fastbook</span><span class="o">.</span><span class="n">git</span> <span class="o">/</span><span class="n">ds</span><span class="o">/</span><span class="n">fastbook</span>
+
+<span class="c1"># Open Ports for Jupyter</span>
+<span class="c1"># EXPOSE 7745</span>
+
+<span class="c1">#Setup File System</span>
+<span class="n">ENV</span> <span class="n">HOME</span><span class="o">=/</span><span class="n">ds</span>
+<span class="n">ENV</span> <span class="n">SHELL</span><span class="o">=/</span><span class="nb">bin</span><span class="o">/</span><span class="n">bash</span>
+<span class="n">ENV</span> <span class="n">KAGGLE_CONFIG_DIR</span><span class="o">=/</span><span class="n">ds</span><span class="o">/.</span><span class="n">kaggle</span>
+<span class="n">VOLUME</span> <span class="o">/</span><span class="n">ds</span>
+<span class="n">WORKDIR</span> <span class="o">/</span><span class="n">ds</span>
+
+<span class="c1"># Make sure the container stays open</span>
+<span class="n">CMD</span> <span class="n">tail</span> <span class="o">-</span><span class="n">f</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">null</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The <a href="https://towardsdatascience.com/how-docker-can-help-you-become-a-more-effective-data-scientist-7fc048ef91d5">Docker tutorial by Hamel Husain</a> has helped me greatly, especially the advice to use someone elses dockerfile and start making it your own by gradually adapting. The above dockerfile is based upon his actually.</p>
+<p>That's it, hope it has helped you!</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="jvanelteren/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/2020/10/31/data_science_setup.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
