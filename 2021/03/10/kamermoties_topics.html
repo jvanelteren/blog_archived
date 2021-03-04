@@ -136,15 +136,15 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>En ja hoor, nog net voor de verkiezingen deel 2 van het motie-onderzoek! In dit deel kijk ik naar de inhoud van de moties. Op de moties te clusteren naar onderwerp gebruikte ik in eerste instantie een bekende techniek <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet Allocation</a>, maar via een gelukkig toeval op Linkedin kwam ik achter een gloednieuwe aanpak die veel beter werkt! Longhow Lam heeft deze toegepast op <a href="https://www.linkedin.com/posts/longhowlam_top2vec-stem-helper-activity-6772061735844098048-zKd6">kamerdebatten</a> van de Tweede Kamer.</p>
-<p>Het algoritme probeert soortgelijke woorden en documenten te clusteren en hieruit onderwerpen te destilleren. In de wordcloud hierboven staan heel generieke woorden die in veel moties voorkomen. Deze zijn niet onderscheidend en worden er automatisch uitgefilterd door het <a href="https://github.com/ddangelov/Top2Vec">Top2Vec</a> algorithme. Uiteindelijk worden er ongeveer 250 topics geidentificeerd, die ik weer heb samengevoegd tot 15. En het klopt verrassend goed! Echt weer zo'n voorbeeld van een doorbraak in machine learning die sneller en beter werkt waardoor oude technieken bij het grofvuil kunnen.</p>
+<p>Nog net voor de verkiezingen deel 2 van het motie-onderzoek! In dit deel kijk ik naar de inhoud van de moties. Op de moties te clusteren naar onderwerp gebruikte ik in eerste instantie een bekende techniek <a href="https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation">Latent Dirichlet Allocation</a>, maar via een gelukkig toeval kwam ik achter een gloednieuwe aanpak die veel beter werkt! Longhow Lam heeft deze toegepast op <a href="https://www.linkedin.com/posts/longhowlam_top2vec-stem-helper-activity-6772061735844098048-zKd6">kamerdebatten</a> van de Tweede Kamer.</p>
+<p>Het algoritme probeert soortgelijke woorden en documenten te clusteren en hieruit onderwerpen te destilleren. In de wordcloud hierboven staan heel generieke woorden die in veel moties voorkomen. Deze zijn niet onderscheidend en worden er automatisch uitgefilterd door het <a href="https://github.com/ddangelov/Top2Vec">Top2Vec</a> algoritme. Echt weer zo'n voorbeeld van een doorbraak in machine learning die sneller en beter werkt waardoor oude technieken bij het grofvuil kunnen. Uiteindelijk worden er ongeveer 250 topics geïdentificeerd. In deze onderwerpen zit wat overlap en het is een beetje moeilijk te visualiseren, dus uiteindelijk heb ik die met Top2Vec samengevoegd tot 15. Dit leidt af en toe tot compromissen maar over het algemeen klopt het vrij goed. Onderop deze blog heb ik wordclouds van de 15 onderwerpen toegevoegd.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Welk-soort-onderwerpen-staan-op-de-agenda?">Welk soort onderwerpen staan op de agenda?<a class="anchor-link" href="#Welk-soort-onderwerpen-staan-op-de-agenda?"> </a></h2><p>Eerst kijken naar de ontwikkeling van de onderwerpen van de ingediende moties. We weten al dat het absoluut aantal moties stijgt, dus heb gekeken naar de relatieve verdeling van de onderwerpen.</p>
+<h2 id="Welk-soort-onderwerpen-staan-op-de-agenda?">Welk soort onderwerpen staan op de agenda?<a class="anchor-link" href="#Welk-soort-onderwerpen-staan-op-de-agenda?"> </a></h2><p>Eerst kijken we naar de ontwikkeling van de onderwerpen van de ingediende moties. We weten al dat het absoluut aantal moties stijgt, dus heb gekeken naar de relatieve verdeling van de onderwerpen.</p>
 
 </div>
 </div>
@@ -222,20 +222,19 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Opvallend dat de verhoudingen redelijk stabiel zijn! Licht in de lift zitten: klimaat en energie, milieu en regelgeving (heel veel coronaregels zitten hier ook in gecategoriseerd), sociale zaken en wonen. Iets minder: landbouw en dierenwelzijn, natuur en gaswinning, onderwijs en openbaar vervoer. Binnen de onderwerpen zijn natuurlijk wel verschuivingen waar het precies over gaat.</p>
+<p>Opvallend dat de verhoudingen redelijk stabiel zijn! Je ziet dan in de loop van de tijd klimaat en energie, milieu en regelgeving (heel veel coronaregels zitten hier ook in gecategoriseerd), sociale zaken en wonen omhoog gaan. Omlaag gaan landbouw en dierenwelzijn, natuur en gaswinning, onderwijs en openbaar vervoer. Binnen de onderwerpen zijn natuurlijk wel verschuivingen waar het precies over gaat. Als basis nemen we de ingediende moties tijdens de afgelopen Tweede Kamer periode (voor het gemak 'Rutte III' genoemd).</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Meest-actieve-partijen-per-onderwerp">Meest actieve partijen per onderwerp<a class="anchor-link" href="#Meest-actieve-partijen-per-onderwerp"> </a></h2><p>Dat doen we op drie manieren:</p>
+<h2 id="Meest-actieve-partijen-per-onderwerp">Meest actieve partijen per onderwerp<a class="anchor-link" href="#Meest-actieve-partijen-per-onderwerp"> </a></h2><p>We onderzoeken wie het meest actief door op drie manieren naar de data te kijken:</p>
 <ol>
-<li>Het aantal moties</li>
+<li>Het aantal ingediende moties (per partij per onderwerp)</li>
 <li>Het aantal succesvolle moties</li>
 <li>Het aantal succesvolle moties per zetel</li>
 </ol>
-<p>We nemen de ingediende moties tijdens de afgelopen kabinetsperiode als basis.</p>
 
 </div>
 </div>
@@ -313,7 +312,7 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In bovenstaande grafiek zien we bijvoorbeeld dat op onderwijs de meeste moties worden ingediend door Groenlinks, gevolgd door de SP, PvdA en D66. Een punt van aandacht is dat deze analyse niet aangeeft wat de partijen met de moties willen bereiken, bijvoorbeeld op openbaar vervoer wil VVD waarschijnlijk heel iets anders bereiken dan SP.</p>
+<p>In bovenstaande grafiek zien we bijvoorbeeld dat op onderwijs de meeste moties worden ingediend door Groenlinks (1 in de grafiek), gevolgd door de SP (2), PvdA (3) en D66 (4). Een punt van aandacht is dat deze analyse niet aangeeft wat de partijen met de moties willen bereiken, bijvoorbeeld op openbaar vervoer wil VVD waarschijnlijk heel iets anders bereiken dan SP.</p>
 <p>PVV is erg actief op justitie, en de PvdD op klimaat, dierenwelzijn milieu en natuur. Ook de enorme output van de SP valt op! Maar ingediend is niet hetzelfde als aangenomen, dat wordt de volgende grafiek:</p>
 
 </div>
@@ -556,14 +555,14 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Als een partij een aantal heel grote bollen heeft betekent dit dat de partij zich heel erg richt op dit onderwerp. Zijn er geen grote bollen binnen een partij is de inzet meer over de onderwerpen verspreid.
-Algemene zaken, Onderwijs en Zorg krijgen bij veel partijen veel aandacht. Daarnaast hebben FvD, PVV en de PvdD een heel uitgesproken profiel.</p>
+Algemene zaken, Onderwijs en Zorg krijgen bij veel partijen veel aandacht. Daarnaast hebben FvD, PVV en de PvdD een heel uitgesproken profiel. In het <a href="https://colab.research.google.com/github/jvanelteren/blog/blob/master/_notebooks/2021-03-10-kamermoties_topics.ipynb">achterliggende notebook</a> heb ik ook nog gekeken naar de ontwikkelingen per partij van de afgelopen 4 kamerperiodes.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Stemgedrag-per-onderwerp">Stemgedrag per onderwerp<a class="anchor-link" href="#Stemgedrag-per-onderwerp"> </a></h2><p>Dan toch nog eens proberen het stemgedrag te visualiseren. Als de VVD iets indient voor de Financiele Sector betekent dit namelijk iets heel anders dan als de SP dat doet. In onderstaande plots staat per onderwerp het stemgedrag gevisualiseerd. Positief of negatief zegt niets, het gaat om partijen die dichtbij of ver weg van elkaar staan. PvdD en VVD vormen meestel de uitersten en verschillen dus het meeste op stemgedrag. Deze grafieken verklaren meestal zo'n 40%-55% van de variatie in het stemgedrag. Let op: het is dus een versimpeling van de werkelijkheid!</p>
+<h2 id="Stemgedrag-per-onderwerp">Stemgedrag per onderwerp<a class="anchor-link" href="#Stemgedrag-per-onderwerp"> </a></h2><p>Dan toch nog eens proberen het stemgedrag te visualiseren. Als de VVD iets indient voor de Financiele Sector betekent dit namelijk iets heel anders dan als de SP dat doet. In onderstaande plots staat per onderwerp het stemgedrag gevisualiseerd. Positief of negatief zegt niets, het gaat om partijen die dichtbij of ver weg van elkaar staan. PvdD en VVD vormen meestal de uitersten en verschillen dus het meeste op stemgedrag. Deze grafieken verklaren meestal zo'n 35%-55% van de variatie in het stemgedrag. Let op: het is dus een versimpeling van de werkelijkheid!</p>
 
 </div>
 </div>
@@ -641,7 +640,7 @@ Algemene zaken, Onderwijs en Zorg krijgen bij veel partijen veel aandacht. Daarn
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Het meest opvallend is dat FvD en PVV soms in het midden zitten en soms aan de rechterkant. Bij de Europese Unie mengen SP, PvdD en de SGP zich hier ook in. Als het gaat om pensioenen zitten ze juist meer aan de linkerkant. 
+<p>'#' geeft het aantal moties aan en '%' het percentage dat deze visualisatie verklaart. Het meest opvallend is dat FvD en PVV soms in het midden zitten en soms aan de rechterkant. Bij de Europese Unie mengen SP, PvdD en de SGP zich hier ook in. Als het gaat om pensioenen zitten ze juist meer aan de linkerkant. 
 De groep PvdD, SP, GroenLinks, PvdA en DENK zit standaard links, alleen wederom bij de EU en pensioenstelsel wordt gehusseld.</p>
 
 </div>
@@ -727,8 +726,8 @@ De groep PvdD, SP, GroenLinks, PvdA en DENK zit standaard links, alleen wederom 
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>De vraag is op welke partij je stemt: PvdD dient enorm veel moties in en bepaalt hier wel het debat mee. Maar de succesvolle partijen zijn meer D66, GroenLinks en CDA.</p>
-<p>En hier houdt het een beetje op, voor een stemadvies moet namelijk uiteindelijk toch weten waar de partijen voor staan, de moties of partijprogramma's gaan lezen om te kijken wat er wordt voorgesteld.</p>
+<p>De vraag is op welke partij je stemt: PvdD dient enorm veel moties in en bepaalt hier wel het debat mee. Maar D66 en GroenLinks dienen dan weer meer succesvolle moties in.</p>
+<p>En hier houdt het een beetje op, voor een stemadvies moet je namelijk uiteindelijk toch weten waar de partijen voor staan, de moties of partijprogramma's gaan lezen om te kijken wat er wordt voorgesteld.</p>
 
 </div>
 </div>
