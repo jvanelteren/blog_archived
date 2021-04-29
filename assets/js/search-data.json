@@ -139,7 +139,7 @@
   
       ,"page1": {
           "title": "About Me",
-          "content": "Visit my (linkedin profile)[https://www.linkedin.com/in/jessevanelteren/] .",
+          "content": "Visit my linkedin profile .",
           "url": "https://jvanelteren.github.io/blog/about/",
           "relUrl": "/about/",
           "date": ""
