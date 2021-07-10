@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Advent of Code Favorites | Jesse van Elteren</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Advent of Code Favorites" />
+<meta name="author" content="Jesse van Elteren" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Most wonderful time of the year" />
+<meta property="og:description" content="Most wonderful time of the year" />
+<link rel="canonical" href="https://jvanelteren.github.io/blog/2021/07/10/aoc.html" />
+<meta property="og:url" content="https://jvanelteren.github.io/blog/2021/07/10/aoc.html" />
+<meta property="og:site_name" content="Jesse van Elteren" />
+<meta property="og:image" content="https://jvanelteren.github.io/blog/images/aoc.PNG" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-07-10T00:00:00-05:00" />
+<script type="application/ld+json">
+{"url":"https://jvanelteren.github.io/blog/2021/07/10/aoc.html","@type":"BlogPosting","headline":"Advent of Code Favorites","dateModified":"2021-07-10T00:00:00-05:00","datePublished":"2021-07-10T00:00:00-05:00","image":"https://jvanelteren.github.io/blog/images/aoc.PNG","mainEntityOfPage":{"@type":"WebPage","@id":"https://jvanelteren.github.io/blog/2021/07/10/aoc.html"},"author":{"@type":"Person","name":"Jesse van Elteren"},"description":"Most wonderful time of the year","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jvanelteren.github.io/blog/feed.xml" title="Jesse van Elteren" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-1302238-4','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+<link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">Jesse van Elteren</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/blog/about/">About Me</a><a class="page-link" href="/blog/search/">Search</a><a class="page-link" href="/blog/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Advent of Code Favorites</h1><p class="page-description">Most wonderful time of the year</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-07-10T00:00:00-05:00" itemprop="datePublished">
+        Jul 10, 2021
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Jesse van Elteren</span></span>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+
+    <a href="https://github.com/jvanelteren/blog/tree/master/_notebooks/2021-07-10-aoc.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/blog/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/jvanelteren/blog/master?filepath=_notebooks%2F2021-07-10-aoc.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/jvanelteren/blog/blob/master/_notebooks/2021-07-10-aoc.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/blog/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2021-07-10-aoc.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/blog/images/copied_from_nb/aoc/aoc.PNG" alt="aoc" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>[This post is work in progress]
+Advent of Code: The concept is simple: from 1st to 25th of December, every day a puzzle unlocks at 0:00. Each puzzle has two parts, so you can earn 2 stars per day for a total of 50 per year. Over 150k people around the world have participated last year. It's really great to practice programming. I've always used Python, but anything goes, even Excel (but beware...).</p>
+<p>I was introduced to Advent of Code in 2018 and quickly hooked. It was a real challenge to solve the puzzles. In 2020 I tried to compete at the leaderboard, which meant getting up at 5:50AM 25 times in a row, which was an experience in itself.</p>
+<p>For old times sake, I've listed my top 12 most memorable puzzles out of 150 (2015-2020, 25 puzzles per year):</p>
+<h3 id="12)-2020-Day-7:-Handy-Haversacks">12) 2020 Day 7: <a href="https://adventofcode.com/2020/day/7">Handy Haversacks</a><a class="anchor-link" href="#12)-2020-Day-7:-Handy-Haversacks"> </a></h3><p>You are presented with colorful bags containing other colorful bags.</p>
+<h3 id="11)-2017-Day-11:-Hex-Ed">11) 2017 Day 11: <a href="https://adventofcode.com/2017/day/11">Hex Ed</a><a class="anchor-link" href="#11)-2017-Day-11:-Hex-Ed"> </a></h3><p>Working with a hexagonal grid is a great change from the usual rectangular grids.</p>
+<h3 id="10)-2019-Day-23:-Category-Six">10) 2019 Day 23: <a href="https://adventofcode.com/2019/day/23">Category Six</a><a class="anchor-link" href="#10)-2019-Day-23:-Category-Six"> </a></h3><p>A nice puzzle which computers sending packets to eachother. Memorable because I later revisited it to learn about async in python.</p>
+<h3 id="9)-2018-Day-23:-Experimental-Emergency-Teleportation">9) 2018 Day 23: <a href="https://adventofcode.com/2018/day/23">Experimental Emergency Teleportation</a><a class="anchor-link" href="#9)-2018-Day-23:-Experimental-Emergency-Teleportation"> </a></h3><p>Given a 3D room with many bots that can reach up to a certain distance, what's the spot where you can reach most bots? Seems simple, but the room is HUGE! This makes solving the puzzle a nice challenge.</p>
+<h3 id="8)-2015-Day-22:-Wizard-Simulator-20XX">8) 2015 Day 22: <a href="https://adventofcode.com/2015/day/22">Wizard Simulator 20XX</a><a class="anchor-link" href="#8)-2015-Day-22:-Wizard-Simulator-20XX"> </a></h3><p>Nice optimization puzzle where you're battling a boss and have to select the best strategy to beat it.</p>
+<h3 id="7)-2019-Day-13:-Care-Package">7) 2019 Day 13: <a href="https://adventofcode.com/2019/day/13">Care Package</a><a class="anchor-link" href="#7)-2019-Day-13:-Care-Package"> </a></h3><p>2019 is a very interesting year, where you build your own computer. During day 13, you basically play a version of <a href="https://en.wikipedia.org/wiki/Arkanoid">arkanoid</a> on that computer, which was great to experience.</p>
+<h3 id="6)-2020-Day-21:-Allergen-Assessment">6) 2020 Day 21: <a href="https://adventofcode.com/2020/day/21">Allergen Assessment</a><a class="anchor-link" href="#6)-2020-Day-21:-Allergen-Assessment"> </a></h3><p>For many people probably not very memorable, but this got me the 189th spot on the leaderboard, where I normally hover around 1600. Also a puzzle where I really enjoyed Python elegance with list comprehensions and sets.</p>
+<h3 id="5)-2019-Day-18:-Many-Worlds-Interpretation">5) 2019 Day 18: <a href="https://adventofcode.com/2019/day/18">Many-Worlds Interpretation</a><a class="anchor-link" href="#5)-2019-Day-18:-Many-Worlds-Interpretation"> </a></h3><p>One of the puzzles I didn't manage to code but solved on paper. You're in a maze and need collect keys. The keys correspond to doors that open when you find the key.</p>
+<h3 id="4)-2016-Day-11:-Radioisotope-Thermoelectric-Generators">4) 2016 Day 11: <a href="https://adventofcode.com/2016/day/11">Radioisotope Thermoelectric Generators</a><a class="anchor-link" href="#4)-2016-Day-11:-Radioisotope-Thermoelectric-Generators"> </a></h3><p>The puzzle of the wolf, hen and grain that have to cross the river. But on steroids. I played with duplo blocks trying to find the best solution. Got confused and in the end had to make it into a BFS, which is an algorithm that comes around frequently.</p>
+<h3 id="3)-2018-Day-17:-Reservoir-Research">3) 2018 Day 17: <a href="https://adventofcode.com/2018/day/17">Reservoir Research</a><a class="anchor-link" href="#3)-2018-Day-17:-Reservoir-Research"> </a></h3><p>Another one from my first year of participation. You have to simulate water falling down into buckets. Just a great puzzle to toy around with. Just a puzzle with a nice story to it, that's what makes it memorable.</p>
+<h3 id="2)-2018-Day-10:-The-Stars-Align">2) 2018 Day 10: <a href="https://adventofcode.com/2018/day/10">The Stars Align</a><a class="anchor-link" href="#2)-2018-Day-10:-The-Stars-Align"> </a></h3><p>A puzzle where you are presented with a set of points with a direction. Again an simulation where at a certain point of time it's litteratly the stars align into a your answer. Felt great joy when I found the answer.</p>
+<h3 id="1)-2019-Day-22:-Slam-Shuffle">1) 2019 Day 22: <a href="https://adventofcode.com/2019/day/22">Slam Shuffle</a><a class="anchor-link" href="#1)-2019-Day-22:-Slam-Shuffle"> </a></h3><p>And the number one, the only puzzle in 2019 I didn't solve in the same day. Take a deck of cards, apply some operations on it and identify the xth card. Easy enough right? Yes, untill for part 2 that deck consists of 119315717514047 cards and you have to apply the operations 101741582076661 times. It took me around 20 hours to solve the puzzle and was in the process so close to breaking and giving up. Wrote <a href="https://www.reddit.com/r/adventofcode/comments/ees6bj/2019_day_22_part_2_story_of_solving_spoilers/">a small post on reddit</a> on it.</p>
+<p>I've uploaded my solutions to <a href="https://github.com/jvanelteren/advent_of_code">GitHub</a>. People post their solutions on <a href="https://www.reddit.com/r/adventofcode/">the AoC subreddit</a>.</p>
+<p>Needless to say I highly recommend AoC! See you all December 1st 5:50AM!</p>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="jvanelteren/blog"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/blog/2021/07/10/aoc.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Applied data science</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/jvanelteren" title="jvanelteren"><svg class="svg-icon grey"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
