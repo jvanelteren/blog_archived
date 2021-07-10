@@ -8,9 +8,9 @@ image: images/aoc.PNG
 hide: false
 search_exclude: true
 ---
-![aoc](images/aoc.png)
-
-Advent of Code: The concept is simple: from 1st to 25th of December, every day a puzzle unlocks at 0:00. Each puzzle has two parts, so you can earn 2 stars per day for a total of 50 per year. Over 150k people around the world have participated last year. It's really great to practice programming. I've always used Python, but anything goes, even Excel (but beware...). People post their solutions on [the AoC subreddit](https://www.reddit.com/r/adventofcode/). 
+![aoc](aoc/aoc.png)
+[This post is work in progress]
+Advent of Code: The concept is simple: from 1st to 25th of December, every day a puzzle unlocks at 0:00. Each puzzle has two parts, so you can earn 2 stars per day for a total of 50 per year. Over 150k people around the world have participated last year. It's really great to practice programming. I've always used Python, but anything goes, even Excel (but beware...).
 
 I was introduced to Advent of Code in 2018 and quickly hooked. It was a real challenge to solve the puzzles. In 2020 I tried to compete at the leaderboard, which meant getting up at 5:50AM 25 times in a row, which was an experience in itself. 
 
@@ -50,6 +50,6 @@ Another one from my first year of participation. You have to simulate water fall
 A puzzle where you are presented with a set of points with a direction. Again an simulation where at a certain point of time it's litteratly the stars align into a your answer. Felt great joy when I found the answer.
 
 ### 1) 2019 Day 22: [Slam Shuffle](https://adventofcode.com/2019/day/22)
-And the number one, the only puzzle in 2019 I didn't solve in the same day. Take a deck of cards, apply some operations on it and identify the xth card. Easy enough right? Yes, untill that deck consists of a TRILLION cards and you have to apply the operations a TRILLION times. It took me around 20 hours and was so close to breaking and giving up. Wrote a [small post on reddit](https://www.reddit.com/r/adventofcode/comments/ees6bj/2019_day_22_part_2_story_of_solving_spoilers/)on it. 
+And the number one, the only puzzle in 2019 I didn't solve in the same day. Take a deck of cards, apply some operations on it and identify the xth card. Easy enough right? Yes, untill that deck consists of a TRILLION cards and you have to apply the operations a TRILLION times. It took me around 20 hours and was so close to breaking and giving up. Wrote a [small post on reddit](https://www.reddit.com/r/adventofcode/comments/ees6bj/2019_day_22_part_2_story_of_solving_spoilers/) on it. 
 
-I've uploaded my solutions to [GitHub](https://github.com/jvanelteren/advent_of_code). See you all December 1st 5:50AM!
+I've uploaded my solutions to [GitHub](https://github.com/jvanelteren/advent_of_code). People post their solutions on [the AoC subreddit](https://www.reddit.com/r/adventofcode/). See you all December 1st 5:50AM!
