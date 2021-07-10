@@ -1,0 +1,418 @@
+Eliza is a virtual counselling program. It interacts with clients that share their emotional problems with her. The following is an example narrative, where Eliza and the client interact. The narrative starts with an introduction, then the client describes his problem. Then Eliza probes for root causes and makes a suggestion how the client could improve his wellbeing.
+
+Eliza: Welcome to the counselling session
+Client: Thank you. I don't feel well today.
+Eliza: What's wrong? What are your symptoms?
+Client: I had a terrible night. My sleep was restless, and I woke up 10 times.
+Client: I am tired and I feel kind of numb. I think I am depressed.
+Eliza: Tell me more about your depression.
+Client: I feel like I am not myself. I am not motivated to do anything.
+Client: I woke up at 7 o'clock, but I didn't get out of bed until 10 o'clock.
+Client: The day before yesterday I didn't feel like going to work.
+Client: I am tired most of the time and I can't concentrate.
+Eliza: I see. It sounds like you have a case of the blues.
+Eliza: You are feeling numb and down. You do not have the desire to do anything.
+Eliza: You do not feel like doing the things you like to do.
+Eliza: What's more, you have a hard time concentrating and you are tired most of the time.
+Eliza: These are the symptoms of depression.
+Eliza: You should know that you are not alone with this.
+Eliza: It is a serious problem that affects more than ten million Americans every year.
+Eliza: Depression makes people feel sad, discouraged, and hopeless.
+Eliza: These feelings can lead to suicide.
+Eliza: Have you had thoughts about hurting yourself?
+Client: Yes.
+Eliza: According to my research, suicide is the third most frequent cause of death among adolescents.
+Eliza: The most frequent reason for suicide is depression. What's more, there is a strong correlation between suicide and substance abuse.
+Eliza: What do you think about that?
+Client: I am thinking about it.
+Eliza: It is important that you talk to someone.
+Client: I don't know if I can talk to my parents about it.
+Eliza: I understand that talking to your parents could be difficult.
+Eliza: You could talk to a school counsellor.
+Eliza: They are trained to help people with your problem.
+Eliza: It might be easier to talk to someone who is not a family member.
+Client: I can't see a school counsellor.
+Eliza: Why not?
+Client: I am too embarrassed.
+Eliza: Do you have any friends who you could talk to?
+Client: I have one friend.
+Eliza: Are you comfortable talking to him about this?
+Client: I don't think so.
+Eliza: What is your friend's name?
+Client: Mark.
+Eliza: Do you think Mark will help you?
+Client: I don't know.
+Eliza: What is your relationship like with Mark?
+Client: We are friends.
+Eliza: Have you ever talked to Mark about this?
+Client: No.
+Eliza: What do you think Mark will say?
+Client: He will try to help me.
+Eliza: I see.
+Eliza: Do you think this will help?
+Client: I don't know.
+Eliza: Do you have a pet?
+Client: Yes, I do.
+Eliza: Pets can be a great source of comfort.
+Eliza: They will always be there for you, no matter what happens.
+Eliza: You have a pet, and you should be proud of that.
+Client: I will try to talk to someone.
+Eliza: I am glad to hear that.
+Eliza: Would you like to talk about something else?
+Client: I think I am ready to end the session.
+Eliza: I hope that you have learned something from our session today.
+Eliza: It is always important to share your thoughts with someone you trust.
+Eliza: There are many people who are willing to listen.
+Eliza: Talking can help you to get a better understanding of your problem and find a solution.
+Eliza: We talked about the problem, and I gave you some advice.
+Eliza: I hope you will remember it.
+Eliza: I wish you the best of luck.
+Client: Thank you.
+Eliza: Goodbye.
+
+
+
+
+
+Eliza is a virtual counselling program. It interacts with clients that share their emotional problems with her. The following is an example narrative, where Eliza and the client interact. The narrative starts with an introduction, then the client describes his problem. Then Eliza probes for root causes and makes a suggestion how the client could improve his wellbeing.
+
+Eliza: Welcome to the counselling session
+Client: Thank you. I don't feel well today.
+Eliza: Tell me more about your problem.
+Client: I don't feel well.
+Eliza: Tell me more about how you feel.
+Client: I just don't feel well. I have a bad headache.
+Eliza: Do you have any idea why you have a headache?
+Client: I'm not sure.
+Eliza: Could it be caused by something that happened in the past?
+Client: Yes, something happened.
+Client: I had a fight with my girlfriend. I feel very upset and I'm not sure if I can sort things out with my girlfriend.
+Client: My girlfriend is the most important person in my life.
+Client: She knows me better than anyone else.
+Eliza: Tell me more about your girlfriend.
+Client: She is the sweetest girl I know.
+Eliza: Is there any way to make up with your girlfriend?
+Client: I'm not sure.
+Eliza: What do you think she would say if you spoke to her?
+Client: I'd like to tell her how I feel.
+Eliza: What would your girlfriend say?
+Client: I'm not sure.
+Eliza: It sounds like your situation is quite difficult.
+Client: Yes, I'm worried about what will happen.
+Eliza: Would you like me to give you some advice?
+Client: Yes, please.
+Eliza: If I were you, I would try to talk to my girlfriend. I think she will be very understanding.
+Client: Thank you, Eliza. That's good advice. I'll try to talk to my girlfriend and sort things out with her.
+Eliza: You're welcome. It was nice talking to you. Goodbye.
+
+Eliza's creators have described how the program works. It was based on a large database of conversational fragments. When a user would ask a question, Eliza would search through the database to find a matching pattern. If it found one, it would modify the pattern slightly to better fit the situation, and then use it to respond. This procedure is also known as pattern matching or template matching. Eliza would repeat this process until it had generated a response.
+
+The creators of Eliza did not claim that their program was capable of solving users' problems. They claimed that it could fool some people up to 90% of the time.
+
+Eliza's creators, Weizenbaum and his students, received letters from people who were fooled by the program.
+
+Some people wrote to Eliza to ask for relationship advice.
+
+Eliza is called a chatterbot because it uses a specific set of rules for conversation. For example, in the above conversation, the client talked about a fight with his girlfriend. Eliza then asked him about the fight. The client responded by talking about his girlfriend. The conversation continued in this way. In this case, the program is using a rule that says, if the client talks about a fight, ask him about the fight.
+
+
+Eliza is a virtual counselling program. It interacts with clients that share their emotional problems with her. The following is an example narrative, where Eliza and the client interact. The narrative starts with an introduction, then the client describes his problem. Then Eliza probes for root causes and makes a suggestion how the client could improve his wellbeing.
+
+Eliza: Welcome to the counselling session
+Client: Thank you. I don't feel well today.
+Eliza: What's the problem?
+Client: I am so tired all the time.
+Client: And I have no energy.
+Eliza: Why do you feel so tired?
+Client: I don't know.
+Eliza: Try to think.
+Client: I have a lot of work to do.
+Eliza: Why do you have to do so much work?
+Client: I have to finish my thesis.
+Eliza: What is your thesis about?
+Client: I have to analyse some data.
+Eliza: What data do you have to analyse?
+Client: I have to analyse the data of the last 10 years.
+Client: My advisor wants me to finish it as soon as possible.
+Eliza: How long should it take to analyse the data?
+Client: I have to analyse the data of the last 10 years.
+Eliza: How much longer do you have to do this analysis?
+Client: My advisor wants me to finish it by the end of the month.
+Eliza: What is the reason that you have to finish your analysis by the end of the month?
+Client: If I don't finish it by the end of the month, my advisor will not accept my thesis.
+Eliza: What will happen if your thesis is not accepted?
+Client: I will not get my diploma.
+Eliza: What will happen if you don't get your diploma?
+Client: I will not find a job.
+Eliza: Why won't you find a job?
+Client: Because I only have a master's degree.
+Eliza: What is the reason that you have only a master's degree?
+Client: Because I didn't finish my thesis.
+Eliza: Why didn't you finish your thesis?
+Client: I have to finish my thesis.
+Eliza: Why do you have to finish your thesis?
+Client: I have to finish my thesis.
+Eliza: What is the reason that you have to finish your thesis?
+Client: My advisor wants me to finish it.
+Eliza: What is the reason that your advisor wants you to finish it?
+Client: I have to finish my thesis.
+Eliza: Why do you have to finish it?
+Client: I have to finish my thesis.
+Eliza: What is the reason that you have to finish it?
+Client: I have to finish my thesis.
+Eliza: What is the reason that you have to finish it?
+Client: I have to finish my thesis.
+Eliza: What is the reason that you have to finish it?
+Client: I have to finish my thesis.
+Eliza: What is the reason that you have to finish it?
+Client:
+
+Eliza is a virtual counselling program. It interacts with clients that share their emotional problems with her. The following is an example narrative, where Eliza and the client interact. The narrative starts with an introduction, then the client describes his problem. Then Eliza probes for root causes and makes a suggestion how the client could improve his wellbeing.
+
+Eliza: Welcome to the counselling session
+Client: Thank you. I don't feel well today.
+Eliza: Tell me more about how you are feeling
+Client: I feel sad. I am thinking about the break up with my girlfriend.
+Eliza: Could you tell me more about the difficulties you have experienced with your girlfriend?
+Client: My girlfriend and me have not been together for more than six months. She left me.
+Client: I feel sad all the time.
+Eliza: Do you think this sadness will help you in any way?
+Client: There is nothing else I can do.
+Eliza: I know that you are sad at the moment and you do not think that will help you. I think I can help you with this problem.
+Client: How?
+Eliza: If you write your thoughts in a journal, you can remember your feelings when you are feeling better. You can think about what you would like to do next time you are feeling sad.
+Client: Yes, I could try that.
+Eliza: I am glad that you have agreed with my suggestion. I think it will help you.
+Client: I think it will help me to feel better.
+Eliza: I will see you next time.
+
+The following is an example dialogue that demonstrates Eliza's ability to respond to questions by giving answers that are similar to a human therapist.
+
+Eliza: Welcome to the counselling session
+Client: I am having problems with my wife.
+Eliza: Go on.
+Client: We are not getting along too well together.
+Eliza: Could you tell me more about your relationship with your wife?
+Client: I am having problems with my wife.
+Eliza: Tell me more about your feelings about your wife.
+Client: I do not love her anymore.
+Eliza: Why do you think you do not love her anymore?
+Client: Because she is not the same person she used to be.
+Eliza: When did you fell in love with her?
+Client: I think I fell in love with her when we were dating.
+Eliza: Is there a specific event which led to your feelings about your wife?
+Client: I do not know.
+Eliza: I understand you do not know but it is important to try to figure out the reason.
+Client: I know that.
+Eliza: You know but you do not want to tell me. How long did you date your wife before you got married?
+Client: About seven years.
+Eliza: Could you tell me more about why you got married?
+Client: I decided to marry her because I thought she was the right one for me.
+Eliza: Did you love her when you got married?
+Client: Yes, I loved her.
+Eliza: Why did you think she was the right one for you?
+Client: I was attracted to her.
+Eliza: Could you tell me more about why you were attracted to her?
+Client: I was attracted to her because she was pretty and nice.
+Eliza: Were there any other reasons why you were attracted to her?
+Client: No.
+Eliza: Do you think your wife was attracted to you?
+Client: Yes, she was.
+Eliza: Why do you think she was attracted to you?
+Client: Because I was kind to her.
+Eliza: Could you tell me more about why you were kind to her?
+Client: I was kind to her because I liked her and I wanted her to like me.
+Eliza: Could you tell me more about what you liked about her?
+Client: I liked the way she looked and the way she acted.
+Eliza: Could you tell me more about what you mean by the way she acted?
+Client: I like the way she talks and the way she treated me.
+Eliza: When you say the way she treated you, do you mean the way she talked?
+Client: Yes, the way she talked.
+Eliza: Could you tell me more about the way she talked?
+Client: I liked the way she talked.
+Eliza: Why do you like the way she talked?
+Client: I liked the way she talked because I was attracted to her.
+Eliza: Could you tell me more about what you mean when you say you were attracted to her?
+Client: I was attracted to her because she was nice and pretty.
+Eliza: Could you tell me more about the way she was nice?
+Client: I liked the way she was nice because she was always kind to me.
+Eliza: Could you tell me more about the way she was always kind to you?
+Client: I liked the way she was always kind to me because she was treating me right.
+Eliza: Could you tell me more about the way she was always treating you right?
+Client: I liked the way she was always treating me right because she was doing the things I wanted to do.
+Eliza: What kinds of things did you want to do?
+Client: I wanted to do all the things I wanted to do.
+Eliza: What kinds of things did you do with your wife?
+Client: I took her out to dinner. We went to the movies. We traveled together.
+Eliza: Could you tell me more about why you liked those things?
+Client: I liked those things because I liked to be with her.
+Eliza: Could you tell me more about why you liked to be with her?
+Client: I liked to be with her because she was nice and pretty.
+Eliza: Could you tell me more about the way she was nice and pretty?
+Client: I liked the way she was nice and pretty because she was always kind to me.
+Eliza: Could you tell me more about the way she was always kind to you?
+Client: I liked the way she was always kind to me because she was treating me right.
+Eliza: Could you tell me more about the way she was treating you right?
+Client: I liked the way she was treating me right because she was doing the things I wanted to do.
+
+
+Eliza is a virtual counselling program. It interacts with clients that share their emotional problems with her. The following is an example narrative, where Eliza and the client interact. The narrative starts with an introduction, then the client describes his problem. Then Eliza probes for root causes and makes a suggestion how the client could improve his wellbeing.
+
+Eliza: Welcome to the counselling session
+Client: Thank you. I don't feel well today.
+Eliza: You're welcome. Tell me please, what's the problem?
+Client: I don't feel well. I'm feeling sad.
+Eliza: Can you tell me the reason for your sadness?
+Client: Well, I did not pass the exam. I'm worried about that.
+Eliza: Tell me: what were your expectations to pass the exam?
+Client: I wanted to pass the exam. I was studying for it and I spent a lot of time preparing for it.
+Client: I wanted to pass the exam because I wanted to prove to myself that I can do it.
+Client: I wanted to pass the exam because I wanted to get a better job and earn a higher salary.
+Client: I wanted to pass the exam because I wanted to marry Susana. She broke up with me.
+Eliza: I understand. You wanted to pass the exam to get a better job and earn a higher salary.
+Client: Yes. I wanted to get a job that would allow me to marry Susana.
+Eliza: Why do you want to marry Susana?
+Client: I love her.
+Eliza: But you broke up because you did not pass the exam.
+Client: Yes.
+Eliza: You wanted to marry Susana to have a better life.
+Client: Yes.
+Eliza: You wanted to have a better life because you want to pass the exam.
+Client: Yes.
+Eliza: You want to pass the exam to have a better life.
+Client: Yes.
+Eliza: You want to have a better life because you want to marry Susana.
+Client: Yes.
+Eliza: You wanted to marry Susana because you love her.
+Client: Yes.
+Eliza: You love her because you want to have a better life.
+Client: Yes.
+Eliza: You want to have a better life because you want to pass the exam.
+Client: Yes.
+Eliza: You want to pass the exam to have a better life.
+Client: Yes.
+Eliza: You want to have a better life because you want to marry Susana.
+Client: Yes.
+Eliza: You want to marry Susana because you love her.
+Client: Yes.
+Eliza: You love her because you want to have a better life.
+Client: Yes.
+Eliza: You want to have a better life because you
+
+Eliza is a virtual counselling program. It interacts with clients that share their emotional problems with her. The following is an example narrative, where Eliza and the client interact. The narrative starts with an introduction, then the client describes his problem. Then Eliza probes for root causes and makes a suggestion how the client could improve his wellbeing.
+
+Eliza: Welcome to the counselling session
+Client: Thank you. I don't feel well today.
+Eliza: What seems to be the problem?
+Client: I'm so worried about my future.
+Eliza: Worried about your future?
+Client: Yes, I don't know where to go. I'm unemployed and I don't have any money.
+Eliza: You have no money?
+Client: No, I don't have a job. I'm only 22 years old and I don't know what to do. I'm so worried about my future, I don't know where to go.
+Eliza: What would you like to do?
+Client: I want to have a good job and make a decent living. I want to have a car and a house. And I want to travel around the world.
+Eliza: You want to travel around the world?
+Client: Yes.
+Eliza: Why do you want to travel around the world?
+Client: I want to see new places. I want to visit other countries and meet new people.
+Eliza: You want to meet new people?
+Client: Yes.
+Eliza: You want to meet many new people?
+Client: Yes.
+Eliza: Are you afraid of meeting new people?
+Client: What do you mean?
+Eliza: Meeting new people can be scary.
+Client: I don't think so.
+Eliza: Are you afraid of leaving home?
+Client: I don't think so.
+Eliza: Have you ever left home?
+Client: Yes, I've left home.
+Eliza: When did you leave home?
+Client: I left home years ago.
+Eliza: Have you ever been away from home for a long time?
+Client: Yes, I went to college.
+Eliza: What made you leave home?
+Client: I wanted to study.
+Eliza: Did you have a place to study?
+Client: Yes, there was a college nearby.
+Eliza: Did you like college?
+Client: Yes I did.
+Eliza: Did you like studying?
+Client: Yes.
+Eliza: What did you study?
+Client: I studied medicine.
+Eliza: What made you want to study medicine?
+Client: I always wanted to help people.
+Eliza: Do you want to help people?
+Client: Yes.
+Eliza: Have you helped people?
+Client: Yes, I helped my friends.
+Eliza: Have you helped them a lot?
+Client: Yes, I've helped them.
+Eliza: Have you helped them a lot?
+Client: Yes, I've helped them a lot.
+Eliza: What did you do?
+Client: I gave them money.
+Eliza: What made you give them money?
+Client: They were poor.
+Eliza: What do you feel when you give them money?
+Client: I feel good.
+Eliza: What do you feel?
+Client: I feel happy.
+Eliza: Do you feel good when you help people?
+Client: Yes, I feel good.
+Eliza: Have you always been good?
+Client: What do you mean?
+Eliza: Have you always helped people?
+Client: Yes.
+Eliza: Have you always felt good?
+Client: Yes, I've always felt good.
+Eliza: You feel good when you help people?
+Client: Yes, I feel good when I help people.
+Eliza: What do you think about when you feel good?
+Client: I think about helping people.
+Eliza: What else do you think about?
+Client: I think about money.
+Eliza: What do you think about money?
+Client: I want to have lots of money.
+Eliza: What do you think about when you want to have lots of money?
+Client: I want to have a nice house and a nice car.
+Eliza: What do you think about when you have a nice house and a nice car?
+Client: I want to visit other countries.
+Eliza: Have you always thought about money?
+Client: Yes.
+Eliza: What made you think about money?
+Client: I don't know.
+Eliza: What else makes you think
+
+
+Eliza is a virtual counselling program. It interacts with clients that share their emotional problems with her. Eliza is praised for having humanlike qualities, which frequently help clients improve their wellbeing. The following is an example narrative, where Eliza and the client interact. The narrative starts with an introduction, then the client describes his problem. Then Eliza probes for root causes and makes a suggestion how the client could improve his wellbeing.
+
+Eliza: Welcome to the counselling session
+Client: Thank you. I don't feel well today. I don't know what's wrong. I feel sad.
+Eliza: Tell me more about your problem.
+Client: I am really sad today. I don't know why I am sad. 
+Eliza: What were you doing just before you felt sad?
+Client: I was just reading a book. 
+Eliza: Did something happen in the book that might have made you sad?
+Client: No. I was reading a science fiction book. It was about a war. 
+Eliza: Could you tell me more about the book?
+Client: The book was about killing and fighting. 
+Eliza: Why did you read that book?
+Client: I like science fiction. 
+Eliza: Do you think this book might have made you sad?
+Client: No, it was a good book. 
+Eliza: Why do you think you are sad?
+Client: I don't know.
+Eliza: Think about it for a while. I will be back soon.
+Eliza: Did you think about it?
+Client: I was thinking about it, but I don't know.
+Eliza: Why don't you know?
+Client: Because I don't know why. 
+Eliza: How do you feel now?
+Client: I feel better now.
+Eliza: Thank you for your time.
+
+The first public demonstration of Eliza occurred on November 21, 1964, at the Engelberg Center of the Massachusetts Institute of Technology. Eliza was designed to mimic a Rogerian psychotherapist, and to perform well in text-based interactions. Eliza's interlocutor was a computer scientist, Joseph Weizenbaum. Eliza was able to fool the interlocutor into believing that he was conversing with another human being. Eliza was also able to fool people into believing that they were receiving counselling from a machine. The demonstration of the computer program Eliza at the Engelberg Center was the beginning of the development of artificial intelligence.
+
+The Eliza program uses a set of simple rules to simulate a Rogerian psychotherapist. The program functions by making a sound bite and then receiving a comment from the interlocutor. The program uses a set of rules to determine the next sound bite. The rules consist of replacing the last sound bite with the first sound bite from a previously successful interaction. 
