@@ -2,10 +2,11 @@
 
 // width of the content area
 // can be set as "px" or "%"
-$content-width:    1200px;
-$on-palm:          1200px;
-$on-laptop:        1200px;
-$on-medium:        1200px;
-$on-large:         1200px;
+$content-width:    100%;
+$on-palm:          100%;
+$on-laptop:        100%;
+$on-medium:        100%;
+$on-large:         100%;
 
+// was all 1200px
 // was on palm 800 and on large 1200, rest 1000
