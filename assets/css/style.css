@@ -212,7 +212,7 @@ table td { border: 1px solid #e8e8e8; }
 
 .site-title { font-size: 1.625rem; font-weight: 300; letter-spacing: -1px; margin-bottom: 0; float: left; }
 
-@media screen and (max-width: 800px) { .site-title { padding-right: 45px; } }
+@media screen and (max-width: 1000px) { .site-title { padding-right: 45px; } }
 
 .site-title, .site-title:visited { color: #424242; }
 
@@ -429,6 +429,8 @@ pre code { font-size: 15px !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
+[id^=altair-viz] { text-align: center; display: flex !important; justify-content: center; align-items: center; }
+
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
 [class^="language-"]:not(.language-plaintext) pre, [class^="language-"]:not(.language-plaintext) code { background-color: #323443 !important; color: #f8f8f2; }
