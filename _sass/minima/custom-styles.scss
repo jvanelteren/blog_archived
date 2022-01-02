@@ -6,6 +6,11 @@
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-
+[id^=altair-viz] {
+    text-align: center;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
 @import "minima/fastpages-dracula-highlight"; 
