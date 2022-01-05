@@ -9,8 +9,8 @@
 <meta property="og:title" content="Playing around with Glide image model" />
 <meta name="author" content="Jesse van Elteren" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="The next hurdle tackled?" />
-<meta property="og:description" content="The next hurdle tackled?" />
+<meta name="description" content="Text to image now almost tackled?" />
+<meta property="og:description" content="Text to image now almost tackled?" />
 <link rel="canonical" href="https://jvanelteren.github.io/blog/2022/01/03/glide_image_model.html" />
 <meta property="og:url" content="https://jvanelteren.github.io/blog/2022/01/03/glide_image_model.html" />
 <meta property="og:site_name" content="Jesse van Elteren" />
@@ -18,7 +18,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-01-03T00:00:00-06:00" />
 <script type="application/ld+json">
-{"dateModified":"2022-01-03T00:00:00-06:00","datePublished":"2022-01-03T00:00:00-06:00","url":"https://jvanelteren.github.io/blog/2022/01/03/glide_image_model.html","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://jvanelteren.github.io/blog/2022/01/03/glide_image_model.html"},"headline":"Playing around with Glide image model","image":"https://jvanelteren.github.io/blog/images/glideimg.png","author":{"@type":"Person","name":"Jesse van Elteren"},"description":"The next hurdle tackled?","@context":"https://schema.org"}</script>
+{"dateModified":"2022-01-03T00:00:00-06:00","datePublished":"2022-01-03T00:00:00-06:00","url":"https://jvanelteren.github.io/blog/2022/01/03/glide_image_model.html","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://jvanelteren.github.io/blog/2022/01/03/glide_image_model.html"},"headline":"Playing around with Glide image model","image":"https://jvanelteren.github.io/blog/images/glideimg.png","author":{"@type":"Person","name":"Jesse van Elteren"},"description":"Text to image now almost tackled?","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://jvanelteren.github.io/blog/feed.xml" title="Jesse van Elteren" /><!-- the google_analytics_id gets auto inserted from the config file -->
 
@@ -88,7 +88,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Playing around with Glide image model</h1><p class="page-description">The next hurdle tackled?</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-01-03T00:00:00-06:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Playing around with Glide image model</h1><p class="page-description">Text to image now almost tackled?</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-01-03T00:00:00-06:00" itemprop="datePublished">
         Jan 3, 2022
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -96,7 +96,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -139,11 +139,17 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>[THIS POST IS WORK IN PROGRESS]
-Deep learning has seen spectacular development the past years. OpenAI has been one of the premier organisations publishing spectacular results. Last year their <a href="https://en.wikipedia.org/wiki/GPT-3">GPT-3</a> was trained on a whopping 500 billion tokens. Then you have a language model which is able to generate all sorts of believable texts.</p>
-<p>Now they also released an image model which translates text promts into images. And not like a google search engine that searches existing images, but actually generating new images.
-The model is called glide and while they keep the full model for themselves to monatize, they did release a slimmed down version.</p>
-<p>I played around with it a bit and let it generate 10 images for each text promt. Below you see the result.</p>
+<p>[THIS POST IS WORK IN PROGRESS]</p>
+<p>You probably know that a computer can come up with a description of an image. For example an image of a dog playing with your kids in a garden may be converted into 'dog and children in garden'.</p>
+<p>But did you know the other way around is now also possible? You come up with your textual description and the computer renders a <strong>new</strong> image. As in completely new, it's not like a google search which searches existing images. Let's check it out!</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>OpenAI has been one of the premier organisations publishing spectacular results in the past years. They mainly take huge datasets of texts and images and train their models on it. They released <a href="https://arxiv.org/pdf/2112.10741.pdf">a paper</a> on their GLIDE image model, trained on several hundred million images. It outperforms their previous already amazing DALL-E model in terms of photorealism.</p>
+<p>They also open-sourced <a href="https://github.com/openai/glide-text2im">a slimmed down version of their model</a>. I played around with it by coming up with some text prompts and let the model generate 10 images for each promt. I selected a range of prompts that gives you an insights to the power, but also the limitations of the released model. Below the results, where I repeat the prompt above the images which makes scrolling on mobile easier.</p>
 
 </div>
 </div>
@@ -157,15 +163,44 @@ The model is called glide and while they keep the full model for themselves to m
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="/blog/images/copied_from_nb/glide/full.png" alt="" /></p>
+<p><img src="/blog/images/copied_from_nb/glide/summary.png" alt="" /></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>You can clearly see the slimmed down model is not photorealistic. The spaghetti doesn't look very tasty :)
-I do find the 'creativity' striking.</p>
+<p>Did you also see this:</p>
+<ul>
+<li>The more complex prompts sometimes are only partially fulfilled. For example: a painting of a cat playing checkers does generate paintings of cats, but not playing checkers</li>
+<li>The representation sometimes is off, with certain animals you can clearly see it's not correct. </li>
+<li>The model can be quite wide in it's approch. When you think of a map of a city, you probably have 1 type of map in your head. The model generates all sorts of types of maps, all believable</li>
+</ul>
+<p>Some I also had a culinary adventure. I tried out 'spagetthi on a plate' but got stuff that honestly looked... awful... Turned out I misspelled it (should be spaghetti) and the corrected dish looked much better. Then I tried to make it delicious and worked out pretty nicely!</p>
+<p><img src="/blog/images/copied_from_nb/glide/spag.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Their full model is larger and also is trained on images of people. See these impressive examples from the paper:</p>
+<p><img src="/blog/images/copied_from_nb/glide/paper.png" alt="" /></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>There are even more examples in <a href="https://arxiv.org/pdf/2112.10741">the paper</a>, check it out! And in case you can't get enough, I've got more results here.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This clearly is a disruption to the stock photo business and the next step forward.</p>
+<p>At this point AI can generate believeable news articles including images that are completely false. Still though, many experts feel that we are currently a long way from Artifical General Intelligence and the current deep learning architectures may not get us to AGI. But it doesn't make these more narrow applications less impressive. Hope you enjoyed it!</p>
 
 </div>
 </div>
