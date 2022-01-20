@@ -146,9 +146,9 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Do you like board games? If you do, you may wonder what other great games are out there. I admit that it's a bit of a guilty pleasure of mine. Many people turn to <a href="https://boardgamegeek.com/">BoardGameGeek (BGG)</a>. This is a great site with many users reviewing games. I used the BGG API to gather information about:</p>
+<p>Do you like board games? If you do, you may wonder what other great games are out there. I admit that it's a bit of a guilty pleasure of mine. Many people turn to <a href="https://boardgamegeek.com/">BoardGameGeek (BGG)</a>. This is a great site with many users rating games. I used the BGG API to gather information about:</p>
 <ul>
-<li>410K users reviewing 19M games</li>
+<li>410K users rating 19M games</li>
 <li>Information on 22K games, such as game type, complexity, minimum age, game duration etc</li>
 </ul>
 <p>The key insights from this dataset are:</p>
@@ -226,10 +226,10 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>19% of <strong>users</strong> only leave 1 review. Together they only account for 0.5% of all reviews</li>
-<li>5% of users (20k) review &gt;200 games. Together they account for 27% of all reviews</li>
-<li>44% of <strong>games</strong> receive &lt;100 reviews. However, these reviews only account of 6% of all reviews.</li>
-<li>7% of games have &gt;2000 reviews. Together they account for 39% of all reviews.</li>
+<li>19% of <strong>users</strong> only leave 1 rating. Together they only account for 0.5% of all ratings</li>
+<li>5% of users (20k) rating &gt;200 games. Together they account for 27% of all ratings</li>
+<li>44% of <strong>games</strong> receive &lt;100 ratings. However, these ratings only account of 6% of all ratings.</li>
+<li>7% of games have &gt;2000 ratings. Together they account for 39% of all ratings.</li>
 </ul>
 
 </div>
@@ -349,7 +349,7 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Check out the insane number of reviews by oldgoat. And 3 games so close to each other with &gt;100K reviews!</p>
+<p>Check out the insane number of ratings by oldgoat. And 3 games so close to each other with &gt;100K ratings!</p>
 
 </div>
 </div>
@@ -450,6 +450,7 @@ window.onload = wrap_img;
 <li>Scores have been climbing since 2005. There is a rough consensus that boardgames have improved in quality.</li>
 <li>As you see the 3 snapshots diverge around 2015. This is a 'hype' effect, where the early adopters score a new/upcoming games higher. For any year, the blue line (the ratings from the dataset in 2019) scores highest, after the orange (2020) and lowest in the most recent version of the dataset (2022). Games from 2020 where rated with 7.8 in 2020, but two years later that has dropped to 7.2 and now games from 2022 are rated with 7.8! When games are about 5 years old the 'hype' effect is more or less gone and games reach a stable score (around 2014 there is no difference anymore). </li>
 </ul>
+<p>Edit: some BGG users are <a href="https://boardgamegeek.com/thread/2797942/did-some-data-analysis-all-19m-reviews-bgg">pointing out</a> it may also have to do with users getting more selective in which games they play</p>
 
 </div>
 </div>
@@ -557,11 +558,11 @@ window.onload = wrap_img;
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Here you see the average rating that different user groups are giving. I've split the population in 3 parts that all account for 33% of the reviews. The very active group gives lower scores (6.9 avg) compared to the active users (7.2 avg) and the normal users (8.1 avg). 
-The very active users only make up of 6% the population (note it's a small area), they do give out 33% of the reviews!</p>
+<p>Here you see the average rating that different user groups are giving. I've split the population in 3 parts that all account for 33% of the ratings. The very active group gives lower scores (6.9 avg) compared to the active users (7.2 avg) and the normal users (8.1 avg). 
+The very active users only make up of 6% the population (note it's a small area), they do give out 33% of the ratings!</p>
 <p>Are normal users less critical or just reviewing better quality games?</p>
-<p>It's notable that 11% of all users give a 10 on average, which accounts for 0.5% of all reviews. You can make a case for filtering these 
-reviews out. Some of the games are rated by many users that have only reviewed one game with a 10. A good example of such a game is <a href="https://boardgamegeek.com/boardgame/245240/goblin-grapple/ratings?rating=10">Goblin Grapple</a>, but there are around 100 games that I find suspect.</p>
+<p>It's notable that 11% of all users give a 10 on average, which accounts for 0.5% of all ratings. You can make a case for filtering these 
+ratings out. Some of the games are rated by many users that have only rated one game with a 10. A good example of such a game is <a href="https://boardgamegeek.com/boardgame/245240/goblin-grapple/ratings?rating=10">Goblin Grapple</a>, but there are around 100 games that I find suspect.</p>
 
 </div>
 </div>
@@ -570,14 +571,14 @@ reviews out. Some of the games are rated by many users that have only reviewed o
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="What-is-the-best-game?">What is the best game?<a class="anchor-link" href="#What-is-the-best-game?"> </a></h3><p>While doing this project so many ideas came to mind on how an alternative ranking could be defined:</p>
 <ul>
-<li>Excluding reviews given by inactive users (I took &lt;=10 as threshold)</li>
-<li>Excluding games that have received 'few' reviews (I took &lt;= 1000)</li>
+<li>Excluding ratings given by inactive users (I took &lt;=10 as threshold)</li>
+<li>Excluding games that have received 'few' ratings (I took &lt;= 1000)</li>
 <li>Accounting for the complexity bonus, so that lighter games end up higher.</li>
 </ul>
 <p>Other ideas:</p>
 <ul>
 <li>Account for the release year. This approach I abandoned, since some new games are truly better. The only thing you want to account for is removing the 'hype' effect. I did this by excluding games after 2017 from the analysis.</li>
-<li>Including reviews with a comment, since these people are more strongly opinionated. It did not differ much.</li>
+<li>Including ratings with a comment, since these people are more strongly opinionated. It did not differ much.</li>
 <li>Training a model that takes the average user rating into account, to account for people consistently rating high or low.</li>
 </ul>
 <p>Let me show you some of the outcomes</p>
